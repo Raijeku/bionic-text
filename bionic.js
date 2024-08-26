@@ -38,12 +38,7 @@ function getRandomInt(min, max) {
 // Converts a word into a bionic word
 function bionicWord(word){
     wordLength = word.length;
-    if(wordLength <= 3){
-        console.log('error '+word)
-        bionicLength = 0;
-    } else {
-        bionicLength = getRandomInt(1, 3);
-    }
+    bionicLength = Math.floor(wordLength/2);
     newWord = '<b>'+word.substring(0, bionicLength)+'</b>'+word.substring(bionicLength);
     return newWord;
 }
