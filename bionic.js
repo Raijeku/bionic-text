@@ -1,5 +1,5 @@
 // Word validation
-const isAlphaWithPunctuation = str => /^[a-zA-Z.,'!?;:()]*$/.test(str);
+const isAlphaWithPunctuation = str => /^[a-zA-ZáéíóúñüÁÉÍÓÚÑÜ.,'!?;:()]*$/.test(str);
 
 // Main function for converting text in all paragraphs to bionic text
 function bionicText(){
